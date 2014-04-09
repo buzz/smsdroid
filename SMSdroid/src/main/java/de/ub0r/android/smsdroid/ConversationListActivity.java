@@ -331,9 +331,7 @@ public final class ConversationListActivity extends SherlockActivity implements
     @Override
     public boolean onCreateOptionsMenu(final Menu menu) {
         getSupportMenuInflater().inflate(R.menu.conversationlist, menu);
-        if (DonationHelper.hideAds(this)) {
-            menu.removeItem(R.id.item_donate);
-        }
+        menu.removeItem(R.id.item_donate);
         return true;
     }
 

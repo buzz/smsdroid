@@ -483,10 +483,6 @@ public class MessageListActivity extends SherlockActivity implements OnItemClick
     @Override
     protected final void onResume() {
         super.onResume();
-        boolean noAds = DonationHelper.hideAds(this);
-        if (!noAds) {
-            Ads.loadAd(this, R.id.ad, ADMOB_PUBID, AD_KEYWORDS);
-        }
 
         final ListView lv = getListView();
         lv.setTranscriptMode(AbsListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
