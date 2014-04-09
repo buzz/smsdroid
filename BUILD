@@ -1,0 +1,5 @@
+- install android SDK
+- create local.properties (content sdk.dir=PATH_TO/sdk)
+- install gradle (1.9!!)
+- $ PATH=$PATH:PATH_TO/gradle-1.9/bin gradle assemble
+- install missing deps using SDK Manager (cd sdk/tools/; android sdk)

@@ -22,22 +22,12 @@ android {
     }
 
     signingConfigs {
-        if (project.hasProperty("releaseKeystorePassword")) {
-            release {
-                storeFile file("release.ks")
-                storePassword releaseKeystorePassword
-                keyAlias "jarsign"
-                keyPassword releaseKeyPassword
-            }
-        }
-
         buildTypes {
             debug {
                 versionNameSuffix " debug"
             }
 
             release {
-                signingConfig signingConfigs.release
             }
         }
     }
